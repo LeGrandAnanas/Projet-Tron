@@ -2,11 +2,11 @@
 
 #include "jeu.h"
 
-jeu::jeu():id(0),couleur(0),positions(0)
+jeu::jeu():id(0),couleur(0)//,positions(0)
 {
 }
 
-jeu::jeu(const jeu & J):id(J.id),couleur(J.couleur),vies(J.vies),positions(J.positions)
+jeu::jeu(const jeu & J):id(J.id),couleur(J.couleur),vies(J.vies)//,positions(J.positions)
 {
 }
 
@@ -24,7 +24,7 @@ int jeu::get_vies()
 {
 	return vies;
 }
-
+/*
 int * jeu::get_positions_X()
 {
 	int * pos = new int[20];
@@ -42,7 +42,7 @@ int * jeu::get_positions_Y()
 	}
 	return pos;
 }
-
+*/
 void jeu::set_id(int new_id)
 {
 	id = new_id;
@@ -57,7 +57,7 @@ void jeu::set_vies(int new_vies)
 {
 	vies = new_vies;
 }
-
+/*
 void jeu::set_positions(int * new_positions)
 {
 	for (unsigned int i = 0; i < 19; i++) {
@@ -77,3 +77,4 @@ void jeu::set_dern_position(int X, int Y)
 	positions[0][0] = X;
 	positions[0][1] = Y;
 }
+*/
