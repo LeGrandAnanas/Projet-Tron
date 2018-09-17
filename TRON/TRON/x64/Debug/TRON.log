@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+  jeu.cpp
+  Joueur.cpp
+  menuprincipal.cpp
+  TRON.cpp
+  Génération de code en cours...
+TRON.obj : error LNK2019: symbole externe non résolu SDL_CreateWindow référencé dans la fonction "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+TRON.obj : error LNK2019: symbole externe non résolu SDL_DestroyWindow référencé dans la fonction "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+TRON.obj : error LNK2019: symbole externe non résolu SDL_Delay référencé dans la fonction "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+TRON.obj : error LNK2019: symbole externe non résolu SDL_Init référencé dans la fonction "int __cdecl SDL_main(void)" (?SDL_main@@YAHXZ)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: symbole externe non résolu main référencé dans la fonction "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\Adrian\Documents\GitHub\Projet-Tron\TRON\TRON\SDL2-2.0.8\lib\x86\SDL2.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+C:\Users\Adrian\Documents\GitHub\Projet-Tron\TRON\TRON\SDL2-2.0.8\lib\x86\SDL2main.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+C:\Users\Adrian\Documents\GitHub\Projet-Tron\TRON\x64\Debug\TRON.exe : fatal error LNK1120: 5 externes non résolus
