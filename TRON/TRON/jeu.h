@@ -7,24 +7,41 @@ public:
 	jeu();
 	jeu(const jeu &);
 
+	void create_map(int taille);
+
 	//GET
 	int get_id();
-	int get_couleur();
 	int get_vies();
-	/*int *get_positions_X();
-	int *get_positions_Y();*/
+	void get_map();
+	int get_map_val(const int _X, const int _Y);//Donne la valeur de la case qui a les coordonnées (_X,_Y)
+	int get_X();
+	int get_Y();
+	int get_dir();
+	int get_taille();
+	int ** get_pos_prec();
 
 	//SET
+	void set_id_joueur(const int _id_joueur);
 	void set_id(int new_id);
-	void set_couleur(int new_couleur);
 	void set_vies(int new_vies);
-	/*void set_positions(int * new_positions);
-	void set_dern_position(int X, int Y);*/
+	int set_map(int X, int Y, int valeur);
+	int set_map(const int ** positions, const int _valeur);
+	void set_X(int nouv_x);
+	void set_Y(int nouv_y);
+	void set_dir(int new_dir);
+	void set_pos_prec(int _X, int _Y);
+
 
 private:
-	int id;
-	int couleur;
-	int vies;
-	//int ** positions;
+	int id;//Identifiant de la partie
+	int vies;//Nombre de vie courante du joueur
+	int ** map;//Carte de la partie
+	int id_joueur;//Identifiant du joueur
+	int X;//Position X du joueur
+	int Y;//Position Y du joueur
+	int direction;//Direction du joueur
+	int taille;//Taille de la carte
+	int ** pos_prec;//Matrice des positions précédentes du joueur
 };
+void test_jeu();
 #endif // !JEU
